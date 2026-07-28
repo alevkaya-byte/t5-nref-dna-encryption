@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+master_key_*.txt
+*.key
+*.pem
+
+# Generated T5 streams and model artifacts
+outputs/
+T5_R1.*/
+T5_R1-ext.*/
+T5_R2.*/
+T5_R3.*/
+*.dna.txt
+*.bits.txt
+*.rules.txt
+*.bin
+
+# Encryption outputs
+cipher_*.txt
+decrypted_*.txt
+meta_*.json
+decrypt_meta_*.json
+integrity_*.json
+security2_t5_*.json
+genom_ekler_*.json
+genom_ekler_*.csv
+encryption_ablation_*/
+fault_robustness_*/
+
+# Local logs
+*.log
