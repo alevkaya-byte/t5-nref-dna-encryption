@@ -1,32 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jun 21 10:42:20 2026
-
-@author: Alev Kaya
-"""
-
-# -*- coding: utf-8 -*-
-"""
-BMC Bioinformatics – T5-NREF DNA-SPD ek genomik metrikler.
-
-Hesaplanan başlıca ölçüler:
-- A/C/G/T sayıları ve olasılıkları
-- GC oranı
-- Shannon entropisi (ideal üst sınır: 2 bit/baz)
-- Homopolimer koşuları
-- k-mer uniformluğu (k=1,2,3)
-- Jensen–Shannon uzaklığı ve ki-kare değeri
-- Baz-gösterge ACF değerleri
-- Plaintext–ciphertext baz/bit farkı
-- Plaintext–decrypted baz/bit geri kazanımı
-
-Baz, k-mer ve homopolimer ölçümleri tüm dosyada streaming hesaplanır.
-ACF, çalışma süresini sınırlamak için ilk ACF_SAMPLE_BASES bazda hesaplanır.
-
-PASS/FLAG yalnız tanımlayıcı bir uyarıdır;
-kriptografik güvenlik kanıtı değildir.
-"""
-
 
 import hashlib
 import itertools
