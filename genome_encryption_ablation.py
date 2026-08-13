@@ -1,24 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 23 09:29:37 2026
-
-@author: Alev Kaya
-"""
-
-# -*- coding: utf-8 -*-
-"""
-BMC Bioinformatics – T5-NREF DNA-SPD şifreleme mimarisi ablation.
-
-E0_full            = SUB + PERM + DIFF + XOR
-E1_no_substitution = PERM + DIFF + XOR
-E2_no_permutation  = SUB + DIFF + XOR
-E3_no_diffusion    = SUB + PERM + XOR
-E4_xor_only        = yalnız tam uzunluklu T5 DNA-XOR
-E5_spd_no_xor      = SUB + PERM + DIFF
-
-Aynı plaintext, master key, nonce ve T5 KS/SUB/PERM/DIFF materyali bütün
-varyantlarda korunur. Böylece yalnız şifreleme katmanlarının katkısı ölçülür.
-"""
 
 
 import csv
