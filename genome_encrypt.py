@@ -1,19 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-BMC Bioinformatics – T5-NREF kontrollü DNA-yerel genom şifreleme.
-
-Akış:
-128-baz master key + nonce + counter + görev etiketi
--> T5-NREF KS/SUB/PERM/DIFF çıktıları
--> substitution -> permutation -> çift yönlü Z4 diffusion -> DNA-XOR
--> yalnız A/C/G/T ciphertext.
-
-Master key dosyası yoksa ilk çalıştırmada otomatik oluşturulur ve aynı dosya
-sonraki şifreleme/deşifreleme işlemleri için korunur. Master key tam uzunluklu
-anahtar olarak periyodik biçimde tekrarlanmaz; T5-NREF her veri parçası için
-counter-separated keystream üretir.
-"""
-
 from __future__ import annotations
 
 import hashlib
