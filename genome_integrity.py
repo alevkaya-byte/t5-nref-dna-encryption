@@ -1,27 +1,4 @@
 
-
-"""
-BMC Bioinformatics – T5-NREF DNA-SPD genom bütünlük doğrulaması.
-
-Amaç:
-- Orijinal DNA ile deşifrelenmiş DNA'yı A/C/G/T-kanonik biçimde karşılaştırır.
-- SHA-256, baz düzeyi birebir eşleşme, Base Recovery Rate (BRR) ve
-  DNA'nın doğal 2-bit gösterimi üzerinden Bit Correction Rate (BCR) hesaplar.
-- Şifreleme/deşifreleme metadata dosyalarının birbiriyle tutarlılığını denetler.
-- Büyük dosyaları belleğe tamamen almadan parçalı olarak işler.
-
-DNA 2-bit eşlemesi:
-    A = 00
-    C = 01
-    G = 10
-    T = 11
-
-Not:
-Orijinal FASTA başlıkları, satır sonları ve A/C/G/T dışındaki karakterler
-kanonik bütünlük hesabına dahil edilmez. Böylece test, dosya biçimini değil,
-gerçek genomik dizinin kayıpsız geri kazanımını ölçer.
-"""
-
 from __future__ import annotations
 
 import hashlib
