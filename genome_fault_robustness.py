@@ -1,31 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 23 12:22:33 2026
-
-@author: Alev Kaya
-"""
-
-
-# -*- coding: utf-8 -*-
-"""
-T5-NREF DNA-SPD hata/bozulma dayanıklılık testi.
-
-İlk koşum:
-    PLAIN_FILENAME = "ds_1kb.txt"
-
-İkinci koşum:
-    PLAIN_FILENAME = "ds_1mb.txt"
-
-RUN_FULL_DECRYPT_FOR_ALL_CASES = False:
-    Bütün 15 vaka gerçek sistemle aynı metadata/uzunluk/HMAC kontrollerinden
-    geçer; seçilmiş vakalar ayrıca gerçek decrypt_genome fonksiyonuna gönderilir.
-
-RUN_FULL_DECRYPT_FOR_ALL_CASES = True:
-    15 vakanın tamamı ayrıca gerçek decrypt_genome yolundan geçirilir.
-    1 Mbp için çok uzun sürebilir ve çoğu vakada yeni bilimsel bilgi sağlamaz.
-"""
-
-
 
 import copy
 import csv
