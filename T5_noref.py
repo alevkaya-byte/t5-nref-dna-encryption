@@ -1,29 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun 13 22:15:26 2026
-
-@author: Alev Kaya
-"""
-
-
-# -*- coding: utf-8 -*-
-"""
-T5_noref_v3_multilag.py
-
-Eğitimsiz / referanssız T5-inspired encoder-decoder DNA-PRNG.
-
-- Referans genom ve eğitim yoktur.
-- Devamlı mutlak sinüzoidal konum kodlaması kullanılır.
-- Decoder sorgusu mutlak hedef konumu + encoder bağlam özetinden türetilir.
-- Base-head simetrik tetrahedral olarak başlatılır.
-- Blok logit kalibrasyonu, kotasız yumuşak dengeleme, homopolimer sınırı,
-  bigram/trigram düzeltmesi ve çoklu-lag dekorrelasyon uygulanır.
-- Ham DNA ve ham bit akışları kaydedilir.
-- SHAKE varsayılan olarak kapalıdır.
-
-Bu sürüm no-reference V3 final-candidate/validation sürümüdür.
-"""
-
 import hashlib
 import json
 import math
