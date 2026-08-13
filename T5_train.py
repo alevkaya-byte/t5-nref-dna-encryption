@@ -1,30 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jun 15 15:07:46 2026
-
-@author: Alev Kaya
-"""
-
-# -*- coding: utf-8 -*-
-
-"""
-T5_train_soft_balance.py
-R1 / R1-ext / R2 için T5-inspired encoder-decoder DNA-PRNG.
-
-- Her koşumda 25 adet 1.000-baz segment seçilir: 20 eğitim, 5 doğrulama.
-- Eğitim pencereleri segment sınırlarını geçmez; model 128 bazlık blokları paralel üretir.
-- 500.000 DNA bazı ve 1.000.000 bit üretilir.
-- Sekiz dinamik DNA-bit kodlama kuralı kullanılır.
-- SHAKE kullanılmaz; ham model çıktısı değerlendirilir.
-- Örnekleme, eğitim, DataLoader ve üretim tohumları RUN_SEED'den
-  ayrı ayrı türetilir.
-- Eski remaining/steps_left tam-kota dengelemesi kullanılmaz.
-- Bunun yerine sonlu kayan pencere + zayıf global geri beslemeli,
-  üstten sınırlandırılmış yumuşak baz dengelemesi uygulanır.
-
-R1-ext ve R2 için yalnızca REAL_PATH ve OUT_TAG değerlerini değiştirin.
-"""
-
 import hashlib
 import json
 import math
