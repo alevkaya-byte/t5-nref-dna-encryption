@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 15 09:47:59 2025
 
-@author: Alev Kaya
-"""
-
-# sp800_90b_iid.py
-# SP 800-90B esinli min-entropy tahminleri + IID kestirimi + Health tests (RCT/APT)
-# Girdi: 0/1 metin dosyası (örn. outputs/real_data_1M.txt)
-# Çalıştırma: python sp800_90b_iid.py outputs/real_data_1M.txt
 
 import sys, math, zlib
 from typing import List, Tuple, Optional
